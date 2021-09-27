@@ -1,0 +1,49 @@
+body {
+    margin:0;
+    height: 100vh;
+    background-color: #eee;
+    font-family: cursive;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper {
+    margin: 2rem auto;
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.2rem;
+}
+
+.wrapper > * {
+    background-color: rgba(0, 0, 0, 0.2);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-column: auto / span 6;
+    height: 3rem;
+}
+
+header {
+    grid-column: auto / span 6;
+    height: 16rem;
+}
+
+main {
+    grid-column: auto / span 6;
+    height: 28rem;
+}
+
+article {
+    grid-column: auto / span 6;
+    height: 24rem;
+}
+
+footer {
+    grid-column: auto / span 6;
+    height: 16rem;
+}
