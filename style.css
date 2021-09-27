@@ -33,6 +33,7 @@ nav img {
     margin: auto 16rem auto 2rem;
 }
 nav a {
+    text-decoration: none;
     font-family: monospace;
     font-size: 1rem;
     color: #666;
@@ -41,8 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #666;
-    color: #ccc;
+    border-bottom: 3px solid black;
 }
 
 header {
