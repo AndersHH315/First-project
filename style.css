@@ -28,6 +28,20 @@ nav {
     height: 3rem;
 }
 
+nav a {
+    text-decoration: none;
+    color: #666;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #666;
+    color: #ccc;
+}
+
 header {
     grid-column: auto / span 6;
     height: 16rem;
