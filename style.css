@@ -13,7 +13,7 @@ body {
     max-width: 1200px;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
-    gap: 0.2rem;
+    gap: 0.5rem;
 }
 
 .wrapper > * {
@@ -25,16 +25,19 @@ body {
 
 nav {
     grid-column: auto / span 6;
-    height: 3rem;
+    height:3rem;
 }
 
+nav img {
+    height: 50%;
+    margin: auto 16rem auto 2rem;
+}
 nav a {
-    text-decoration: none;
+    font-family: monospace;
+    font-size: 1rem;
     color: #666;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 1rem;
+
 }
 
 nav a:hover {
