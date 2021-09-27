@@ -13,7 +13,6 @@ body {
     max-width: 1200px;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
-    gap: 0.5rem;
 }
 
 .wrapper > * {
@@ -23,16 +22,23 @@ body {
     align-items: center;
 }
 
-nav {
-    grid-column: auto / span 6;
-    height:3rem;
+.container {
+    position: absolute;
 }
 
-nav img {
+.container p {
+    font-family: cursive;
+}
+
+.topnav {
+    margin-bottom: 13rem;
+}
+
+.topnav img {
     height: 50%;
     margin: auto 16rem auto 2rem;
 }
-nav a {
+.topnav a {
     text-decoration: none;
     font-family: monospace;
     font-size: 1rem;
@@ -41,13 +47,20 @@ nav a {
 
 }
 
-nav a:hover {
+.topnav a:hover {
     border-bottom: 3px solid black;
 }
 
 header {
     grid-column: auto / span 6;
     height: 16rem;
+}
+
+header{
+    background-image: url("https://images.unsplash.com/photo-1573126617899-41f1dffb196c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vdW50YWlufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
