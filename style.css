@@ -4,7 +4,7 @@ body {
     display: grid;
     grid-template-rows: 640px auto auto 240px 50px;
     grid-template-columns: 1fr;
-    grid-template-areas: "top" "content" "contact" "footer";
+    grid-template-areas: "top" "content" "contact-us" "footer";
     gap:0;
     background-color: #eee;
     font-family: cursive;
@@ -119,6 +119,36 @@ main {
 
 .content .spinner .dogimages img {
     width: 22%;
+}
+
+.contact-us {
+    grid-area:contact-us;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-us .left-column {
+    display:grid;
+    grid-template-rows: 4rem 4rem 10rem 4rem;
+}
+.contact-us .right-column {
+    grid-template-rows: auto auto;
+}
+
+.right-column img {
+    border-radius: 0.25rem;
+    width: 80%;;
+}
+
+input {
+    color:#FFF;
+    width:100%;
+    height:100%;
+    border:0;
+    border-radius: 0.25rem;
+
 }
 footer {
     color: #666;
